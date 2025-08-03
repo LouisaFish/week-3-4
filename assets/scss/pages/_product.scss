@@ -1,0 +1,89 @@
+.delete {
+  font-weight: 400;
+  font-size: 14px;
+  color: $neutral-500;
+  text-decoration: line-through;
+}
+/*產品格線*/
+.product-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -4px;
+  margin-left: -4px;
+}
+
+.product-col-6 {
+  width: calc(100% / 12 * 6);
+  padding-left: 4px;
+  padding-right: 4px;
+}
+@media (max-width: 767px) {
+  .product-col-6 {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/*產品描述*/
+.product-color {
+  width: 64px;
+  color: $neutral-600;
+  text-align: center;
+}
+
+.btn-product-size {
+  width: 160px;
+  border: 1px solid $neutral-300;
+}
+@media (max-width: 767px) {
+  .btn-product-size {
+    width: 210px;
+  }
+}
+@media (max-width: 576px) {
+  .btn-product-size {
+    width: 240px;
+  }
+}
+
+.btn-product-size.active,
+.btn-product-size:hover {
+  border: 1px solid $neutral-900;
+}
+
+.btn-like,
+.btn-trial {
+  width: 50%;
+}
+
+.btn-md-like {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .btn-like {
+    display: none;
+  }
+  .btn-trial {
+    flex-grow: 1;
+  }
+
+  .btn-md-like {
+    display: inline;
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+  }
+  .btn-md-like .bi {
+    font-size: 20px;
+  }
+}
+
+.btn-action .bi {
+  padding-right: 8px;
+}
+
+.product-info {
+  border-bottom: 1px solid $neutral-300;
+}
